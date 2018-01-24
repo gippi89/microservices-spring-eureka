@@ -5,9 +5,17 @@
   <groupId>com.babiel.tg.sandbox.microservices</groupId>
   <artifactId>eureka-client</artifactId>
   <version>1.0.0-SNAPSHOW</version>
-  <packaging>jar</packaging>
+  <modules>
+    <module>../eureka-models</module>
+  </modules>
+  <packaging>pom</packaging>
 
   <dependencies>
+    <dependency>
+      <groupId>com.babiel.tg.sandbox.microservices</groupId>
+      <artifactId>eureka-models</artifactId>
+      <version>1.0.0-SNAPSHOW</version>
+    </dependency>
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-eureka</artifactId>
